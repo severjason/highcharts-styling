@@ -1,12 +1,19 @@
 import React from 'react';
-import ReactHighcharts from 'react-highcharts/ReactHighcharts.src';
-import config from '../configs/first';
+import FirstChartStyles from './FirstChartStyles';
+//import ReactHighcharts from 'react-highcharts/ReactHighcharts.src';
+//import config from '../configs/first';
 
 const FirstChart = () => {
 	return (
-		<div >
-			<ReactHighcharts config={config} />
-		</div>
+		<FirstChartStyles >
+			<div className="container">
+				<div className="line"/>
+				<div className="photo">
+					Photo
+				</div>
+			</div>
+			{/*<ReactHighcharts config={config} />*/}
+		</FirstChartStyles>
 	)
 };
 
